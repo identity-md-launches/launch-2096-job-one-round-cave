@@ -70,3 +70,18 @@ python3 -B line-2/tools/proof-set/proof_set.py demo
 Eight new tests passed. [Round 24](ROUND-24.md) and
 [review measurements](REVIEW-24.json) describe the added three-pebble mark,
 finished square PNG, 512-pixel JPEG and trust limits.
+
+## Round 25 addition
+
+[Pool State](tools/pool-state/README.md) verifies the real ZTO/IMD pool slot0
+and decodes its signed tick, fees and exact reciprocal raw-unit price ratios.
+
+```sh
+python3 -B line-2/tools/pool-state/pool_state.py demo
+```
+
+All nine new tests and 61 ancestor tests passed. The layout and pool identity
+remain explicit interpretation assumptions; checkpoint authentication and
+whole-token decimal scaling remain external. [Round 25](ROUND-25.md) and
+[review measurements](REVIEW-25.json) record the balance pictogram, preservation
+comparison, square PNG and 512-pixel JPEG.

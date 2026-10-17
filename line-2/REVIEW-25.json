@@ -1,0 +1,79 @@
+{
+  "ancestorSha256": "eb76b59884ee473489ab07e753c0724246bcba75153dabbc1942555ef9396ab4",
+  "wallSha256": "34a0d92d765d9fa30b6facd0dcca8c1df50ef3c541a7af69a89e61afbf48bbf0",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "channels": "RGB",
+  "newMarkRectangle": [
+    675,
+    345,
+    160,
+    70
+  ],
+  "changedPixels": 1666,
+  "changedPixelsOutsideRectangle": 0,
+  "method": "Installed image tool generated the balance pictogram; pigment only was blended onto unused rock. Ancestor pixels outside this rectangle are identical.",
+  "round": 25,
+  "images": [
+    {
+      "path": "artifacts/line-2/wall-v5.png",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "channels": "RGB",
+      "bytes": 3936731,
+      "sha256": "34a0d92d765d9fa30b6facd0dcca8c1df50ef3c541a7af69a89e61afbf48bbf0"
+    },
+    {
+      "path": "artifacts/line-2/wall.png",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "channels": "RGB",
+      "bytes": 3936731,
+      "sha256": "34a0d92d765d9fa30b6facd0dcca8c1df50ef3c541a7af69a89e61afbf48bbf0"
+    },
+    {
+      "path": "dist/line-2/25.jpg",
+      "format": "JPEG",
+      "width": 512,
+      "height": 512,
+      "channels": "RGB",
+      "bytes": 61625,
+      "sha256": "e389630bb678f535e6c5458c05c6ce2d75bc5ce42562746392d61d5642a026a3"
+    }
+  ],
+  "record": "dist/line-2/25.json",
+  "goalUnchanged": true,
+  "olderRecordsUnchanged": 24,
+  "offlineTests": {
+    "ancestorPassed": 61,
+    "poolStatePassed": 9,
+    "failed": 0
+  },
+  "visualReview": {
+    "method": "Local full PNG and JPEG inspection, plus exact decoded RGB comparison outside the addition patch.",
+    "recognizablePepe": true,
+    "digitsPerAncestorHand": [
+      5,
+      5
+    ],
+    "newHandsOrHandprints": 0,
+    "ancestorPaintingRetained": true,
+    "prohibitedVisualElementsObserved": false,
+    "externalVisualApproval": false
+  },
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Pool state interpretation assumes the assignment pool identity and v4 deployed storage layout. Checkpoint authentication remains external.",
+    "The explicitly required beside-record JPEG is in dist/line-2 despite the conflicting blanket picture-location rule.",
+    "Generated pigment was scaled and blended; the result has no independent external visual approval."
+  ],
+  "continuationStorage": {
+    "path": "artifacts/line-2/wall.png",
+    "relativeSymlink": "wall-v5.png"
+  }
+}

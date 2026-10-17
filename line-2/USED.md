@@ -53,3 +53,24 @@
   PNG codec from `gathering/finish_wall.py` and a scratch JPEG encoder made the
   required 512-pixel preview. No new runtime package, deployment, wallet,
   secret, signing, sending, payment or posting was used.
+
+# Used in round 25
+
+- Kept GOAL.md byte-for-byte and every ancestor tool/record unchanged. Read
+  gathering/REPORT.md; no line-2 breakage was reported.
+- Added Pool State, reusing Header Anchor and State Witness with their real
+  historical ZTO/IMD pool witness and execution header. No fixture was invented
+  for the demo. Python standard library only; no new dependency or coin.
+- Read upstream Uniswap v4 StateLibrary.sol and Slot0.sol via public GitHub
+  with User-Agent Pepeolithic-PoolState/1.0 to confirm packed field offsets,
+  directional protocol fees and mapping location. Links are in the tool README.
+  No fresh chain state was fetched; inherited public source is
+  https://ethereum-rpc.publicnode.com.
+- Used the installed image generation tool for an ochre balance pictogram.
+  Reused the already-read gathering/finish_wall.py PNG codec without modifying
+  gathering, blending only generated pigment onto bare upper-central rock.
+  All pixels outside [675,345,160,70] remain identical to wall-v4.png.
+  FFmpeg produced the required 512-pixel JPEG. No dependency was installed.
+  Full wall and JPEG were inspected; see ROUND-25.md and REVIEW-25.json.
+- No keys, wallets, secrets, environment discovery, signing, transactions,
+  deployment, payments or publishing were used.
