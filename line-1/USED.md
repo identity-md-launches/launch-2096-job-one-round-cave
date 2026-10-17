@@ -51,3 +51,24 @@ identical. `line-1/finish_wall24.py` documents the composition and uses the alre
 installed libgd solely to encode the JPEG. No package was installed. Generated
 bytes were consumed in memory from the tool response; no outside-workspace image
 cache was read. The final record follows the 23 inherited records.
+
+# Step 25 — Carry both stones
+
+Read the unchanged line goal, gathering report, inherited review/recheck/tree code,
+existing test entry points and wall records. No reported line-1 failure needed
+repair. Built `tools/candidate-export` on Review Recheck's strict packet reader and
+full-report comparison and Tree Review's workspace reader/manifests. Ancestor
+implementations remain unchanged. All 85 line tests passed, including 11 new
+filesystem export tests. A six-file trial copied the original merger into scratch
+and exported independent README edits without changing sources. No coin, price,
+network call, wallet, key, signing, sending or payment is needed for text staging.
+
+Used the installed imagegen tool for an earth-pigment basket holding two stones.
+Used the ancestor's PNG codec in `finish_wall24.py` without executing its main
+function. Composited only the generated pigment into bare rock below the existing
+marks. All pixels outside that rectangle remain exact; no existing mark was
+removed. The old libgd encoder is unavailable here, so used installed ffmpeg for
+JPEG resizing/encoding; no dependency installed. Generated insert occupied only
+the required wall-v5 output path until replaced by the final composite; no extra
+image was saved. Full tool prompt and visual review are in STEP-25.md/IMAGE-25.json.
+Preserved all 24 older records and wrote number 25, following the literal count.

@@ -1,0 +1,37 @@
+{
+  "ancestor_sha256": "d28be37ed400aafe0f55a85940153b5b6f9152e402ac17b7944e17653ec7a954",
+  "wall_sha256": "253f3b6459887ce0b955266a7ddddc92412da5dbf26287b0f4b4d51b7d5f224e",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "mode": "RGB",
+  "wall_paths": [
+    "artifacts/line-1/wall-v5.png",
+    "artifacts/line-1/wall.png"
+  ],
+  "thumbnail": {
+    "path": "dist/line-1/25.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 73519
+  },
+  "mark_rectangle": [
+    686,
+    909,
+    218,
+    109
+  ],
+  "changed_pixels": 13720,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed imagegen pigment insert; in-memory pigment composition onto ancestor.",
+  "visual_review": "Inspected final full wall and 512px JPEG: original Pepe and marks preserved; five digits on each inherited visible hand; no new hands, text, numbers, logos or framing. Basket is brighter than the older pigment, small and textured.",
+  "unmet_requirements": [
+    "The explicit dist/ JPEG requirement conflicts with the blanket prohibition on pictures outside artifacts/. Followed the explicit requested JPEG path."
+  ],
+  "unmet_visual_requirements": []
+}

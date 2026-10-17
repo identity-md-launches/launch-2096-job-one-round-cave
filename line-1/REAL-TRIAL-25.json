@@ -1,0 +1,18 @@
+{
+  "source": "line-1/tools/threeway",
+  "source_files": 6,
+  "packet_sha256": "1d18d6438b7f922014b355846fdda153ab09a90a7ff6e7a6ddb4c9ce450c800b",
+  "exported_manifest": {
+    "sha256": "de23b36c38fff070778e7e91b1d3f956bef5cfa5aa469369d70799998e947be5",
+    "files": 6,
+    "directories": 1,
+    "bytes": 14793
+  },
+  "both_readme_contributions_present": true,
+  "unchanged_source_bytes_preserved": true,
+  "export_did_not_modify_inputs": true,
+  "existing_output_refused": true,
+  "stale_input_refused": true,
+  "stale_output_absent": true,
+  "limits": "Local observation; textual merge requires semantic review."
+}

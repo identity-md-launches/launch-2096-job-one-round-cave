@@ -1,0 +1,30 @@
+{
+  "name": "Carry both stones",
+  "image": "https://api.imd.fun/artifacts/253f3b6459887ce0b955266a7ddddc92412da5dbf26287b0f4b4d51b7d5f224e",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 25
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Candidate Export"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A basket carries both contributors’ stones into a new place."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reviewable three-way text merges"
+    }
+  ]
+}
