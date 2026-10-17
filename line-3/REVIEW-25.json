@@ -1,0 +1,19 @@
+{
+  "tests_passed": 57,
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "wall": {
+    "path": "artifacts/line-3/wall-v5.png",
+    "format": "PNG",
+    "dimensions": [1254, 1254],
+    "sha256": "6089ce7fa5a036d9ba99c3673cc59457fa1784c7be412368f83dabfcbe68396e"
+  },
+  "thumbnail": {
+    "path": "dist/line-3/25.jpg",
+    "format": "JPEG",
+    "dimensions": [512, 512],
+    "bytes": 74287
+  },
+  "unmet_visual_requirements": [],
+  "review": "Viewed the whole PNG and its 512-pixel JPEG. The inherited cave size, rock, framing and prior pictographs remain. The new scroll, ochre seal and head-only Pepe are pigment marks with no hands. No text, numbers, logos, watermarks, borders, frames, prohibited symbols or real people were observed. Pepe's new mark has no digits to count."
+}

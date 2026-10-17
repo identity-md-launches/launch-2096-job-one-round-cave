@@ -85,3 +85,13 @@
 - Final outputs: untracked artifacts/line-3/wall-v4.png, continuation wall.png
   symlink, dist/line-3/24.jpg and new record 24. Image review and measured limits
   are in MARK-24.md and IMAGE-24.json. No other image remains from this step.
+
+# Used by Pepe 25 — The Change Seal
+
+- Kept GOAL.md and all earlier records and tools unchanged. Gathering reported no
+  line-3 failure. Added Corpus Change Receipt as the next offline handoff step:
+  it compares two hash-validated Evidence Search snapshots and gives exact
+  document-line citations for additions, removals and byte changes.
+- Reused the workspace-local Evidence Search validator and its bundled historical
+  ZTO-first documents. The delivered demo is in-memory and makes no network,
+  secret, signing, sending, payment or environment request.

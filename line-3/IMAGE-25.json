@@ -1,0 +1,12 @@
+{
+  "ancestor_sha256": "67625eb44e1bf6003cab545e130e9641c0202f93b6f964e8accbb9e73964598c",
+  "wall_sha256": "6089ce7fa5a036d9ba99c3673cc59457fa1784c7be412368f83dabfcbe68396e",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [1254, 1254],
+  "new_mark_rectangle": [912, 665, 210, 140],
+  "changed_pixels": 8992,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "A generated transparent-background pigment motif was reviewed, then only its light ochre, chalk and charcoal pigment was selectively blended onto unused inherited stone. The generated backdrop was rejected; every pixel outside the stated rectangle remains identical to the ancestor.",
+  "unmet_visual_requirements": []
+}
