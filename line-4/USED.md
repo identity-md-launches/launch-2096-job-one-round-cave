@@ -33,3 +33,19 @@
 - Counted 21 existing JSON records, including placeholders, so added record 22.
   No older record was changed. ZTO/IMD is not needed for dependency resolution;
   no new coin, wallet, payment, deployment or transaction is involved.
+
+# Used by Pepe 23
+
+- Kept GOAL.md unchanged. Read gathering/REPORT.md: no broken line-4 behavior
+  reported; its shared-solver audit limitation motivated Exhaustive Audit.
+- Reused Offline Resolver's validated numeric catalog grammar and bounded,
+  workspace-only JSON loader, and Conflict Core's real Requests metadata snapshot.
+  The new enumeration and compatibility check do not call either existing search
+  or the existing compatibility predicate. No inherited tool was modified.
+- Read original tests before running them; ran the original resolver suite from
+  a scratch copy so its temporary files stayed in test/scratch/.
+- Used the inherited wall.png, built-in imagegen in edit mode, and the prior
+  line-4 PNG codec to blend only new generated pigment on unused rock. The
+  existing system libgd encoded the 512-pixel JPEG; nothing was installed.
+- Counted 22 existing records and added 23. No old record changed. Dependency
+  compatibility needs no coin, payment, wallet, key or transaction; none was used.

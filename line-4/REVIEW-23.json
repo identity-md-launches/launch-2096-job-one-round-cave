@@ -1,0 +1,63 @@
+{
+  "number": 23,
+  "tool": "Exhaustive Audit",
+  "checks": {
+    "new_tests_passed": 14,
+    "new_seeded_solver_comparisons": 500,
+    "existing_resolver_tests_passed": 17,
+    "existing_core_tests_passed": 15,
+    "all_line_tests_passed": 46,
+    "real_demo_candidate_assignments_exhausted": 24,
+    "goal_unchanged": true,
+    "older_records_unchanged": true,
+    "record_shape": "passed",
+    "png_crc_decompression": "passed",
+    "jpeg_dimensions": "passed",
+    "required_equals_continuation": true
+  },
+  "wall": {
+    "path": "artifacts/line-4/wall-v5.png",
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 3880979,
+    "sha256": "02d549d6502d5dab1259aef5893b079053dfbcb15bd0c801714dc0b832413e61"
+  },
+  "preview": {
+    "path": "dist/line-4/23.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 70495
+  },
+  "visual_review": {
+    "method": "Viewed completed PNG and JPEG and compared ancestor pixels.",
+    "changed_pixels": 9345,
+    "changed_pixels_outside_new_mark_region": 0,
+    "ancestor_marks": "Every ancestral pictograph and Pepe retained; new pigment is on empty rock.",
+    "upper_hand_digits": 5,
+    "lower_hand_digits": 5,
+    "new_hands": 0,
+    "new_handprints": 0,
+    "pepe": "Wide mouth and heavy-lidded eyes retained.",
+    "prohibited_content": "No visible letters, numbers, captions, signatures, logos, borders or prohibited symbols.",
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Visual review is subjective, not independent certification.",
+      "The mesh is uneven and worn; fine detail is subdued in the JPEG.",
+      "Pigment blending can alter fine rock pixels within the new mark; all outside pixels are exact."
+    ]
+  },
+  "limits": [
+    "Exponential bounded enumeration; exhaustion of the budget remains inconclusive.",
+    "Shares catalog parsing/validation with the original solver; no portable proof certificate.",
+    "Report mode checks only the compatibility claim against the supplied entire catalog, not report provenance or core minimality.",
+    "Finite numeric grammar and metadata projection; no installability or security guarantee."
+  ],
+  "output_delivery": "Required wall-v5.png is left untracked for upload; no output force-added."
+}
