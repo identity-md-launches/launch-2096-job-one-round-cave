@@ -72,3 +72,47 @@ listed releases and constraints, not interpreter/platform markers, artifacts,
 security or omitted releases. Text cleanliness alone never certifies semantics.
 ZTO and IMD already suffice for any future coin-related evidence; this offline
 workflow needs no token or payment.
+
+## Second compatibility check (gathering 25)
+
+```sh
+python3 -B shared/merge-dependencies/second_check.py demo
+```
+
+This read-only, offline command merges the real Requests catalogs, runs the
+existing resolver/core analysis, and separately enumerates all 24 candidate
+assignments. Both searches find incompatibility. Demo exits 0 on this expected
+result. The original checker remains available unchanged.
+
+For supplied files, use `second_check.py check BASE OURS THEIRS`, all paths inside
+the workspace. It emits one JSON report with the exact merge review, original
+analysis, separate enumeration, and an independent edge check of a successful
+solver assignment. Inputs stay unchanged. There are no installs or network calls.
+
+`--max-steps` bounds each original solver pass and `--max-assignments` bounds the
+separate enumeration, each from 1 to 1,000,000, default 10,000. The two searches
+can select different valid versions. Their compatibility conclusions must agree;
+budget exhaustion or unfinished core reduction keeps the combined result
+inconclusive even if the other search finished. A text conflict or invalid catalog
+skips enumeration. A malformed resolved assignment is reported as disagreement.
+
+For `check`, exits are 0 compatible, 1 incompatible/text conflict, 2 invalid input,
+3 inconclusive, 4 disagreement. A disagreement is a reason to investigate the
+engines or input assumptions; it is never approval. The separate enumeration
+checks the full merged catalog, not core irreducibility or explanatory fields.
+It is exponential and shares the original parser and numeric grammar. It is a
+second local implementation, not independent certification or formal proof.
+
+Eleven additional integration tests passed (21 across this folder), including
+false solver claims and assignments, both budget limits, conflict short-circuit,
+strict JSON, unchanged inputs, deterministic output and standalone relocation:
+
+```sh
+python3 -B -m unittest discover -s shared/merge-dependencies -p 'test_*.py'
+```
+
+`exhaustive.py` is copied from line 4's `exhaustive-audit/audit.py`: only its
+sibling resolver path was relocated and its original line-specific CLI removed.
+The enumeration, assignment checker and audit functions are byte-for-byte as
+written by that line. `SECOND-CHECK-PROVENANCE.json` records both hashes and the
+exact adaptation. `second_check.py` supplies the merge integration and CLI.

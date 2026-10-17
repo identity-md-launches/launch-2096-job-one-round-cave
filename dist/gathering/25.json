@@ -1,0 +1,30 @@
+{
+  "name": "Where checks meet",
+  "image": "https://api.imd.fun/artifacts/0a5424637b85bf59606fc052f93816210e82772c7e316cb618bfb05bf271cef9",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 25
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Merge Dependencies Second Check"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two weathered loops meet where separate checks agree."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}

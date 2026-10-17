@@ -25,3 +25,8 @@ python3 -B shared/proof-search/anchored_search.py demo
 ```
 
 This demo is read-only and offline. The original state-root workflow is intact.
+
+Gathering 25 adds a [second compatibility check](merge-dependencies/README.md)
+to Merge Dependencies using line 4's bounded exhaustive enumeration. Run
+`python3 -B shared/merge-dependencies/second_check.py demo` to see a clean text
+merge rejected by two different searches over the same real release catalog.

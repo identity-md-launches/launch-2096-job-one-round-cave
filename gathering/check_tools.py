@@ -20,15 +20,15 @@ def main():
     scratch = Path('test/scratch')
     scratch.mkdir(parents=True, exist_ok=True)
     results = []
-    with tempfile.TemporaryDirectory(dir=scratch, prefix='gathering24-') as temp:
+    with tempfile.TemporaryDirectory(dir=scratch, prefix='gathering25-') as temp:
         # The original resolver tests create temporary files beside themselves.
         copy = Path(temp) / 'offline-resolver'
         shutil.copytree('line-4/tools/offline-resolver', copy)
         suites = [(f'line-{n}/tools/{name}', name) for n, names in [
-            (1, ['threeway', 'merge-review', 'tree-review', 'review-recheck']),
-            (2, ['state-witness', 'header-anchor', 'code-witness', 'proof-set']),
-            (3, ['evidence-search', 'corpus-freshness', 'search-receipt', 'evidence-bundle']),
-            (4, ['offline-resolver', 'conflict-core'])] for name in names]
+            (1, ['threeway', 'merge-review', 'tree-review', 'review-recheck', 'candidate-export']),
+            (2, ['state-witness', 'header-anchor', 'code-witness', 'proof-set', 'pool-state']),
+            (3, ['evidence-search', 'corpus-freshness', 'search-receipt', 'evidence-bundle', 'corpus-change-receipt']),
+            (4, ['offline-resolver', 'conflict-core', 'exhaustive-audit'])] for name in names]
         for folder, name in suites:
             test_folder = str(copy) if name == 'offline-resolver' else folder
             args = ['-m', 'unittest', 'discover', '-s', test_folder, '-p', 'test_*.py']
@@ -62,6 +62,11 @@ def main():
         for mode, status in [('clean', 0), ('conflict', 0), ('stale', 1), ('tampered', 1)]]
     demos += [('line-2/tools/proof-set/proof_set.py', ['demo'], 0),
               ('line-3/tools/evidence-bundle/bundle.py', ['demo'], 0)]
+    demos += [('line-1/tools/candidate-export/export.py', ['--demo'], 0),
+              ('line-2/tools/pool-state/pool_state.py', ['demo'], 0),
+              ('line-3/tools/corpus-change-receipt/receipt.py', ['demo'], 0),
+              ('line-4/tools/exhaustive-audit/audit.py', ['demo'], 0),
+              ('line-4/tools/exhaustive-audit/audit.py', ['demo', '--max-assignments', '1'], 3)]
     trials = []
     for script, args, expected in demos:
         proc = subprocess.run([sys.executable, '-B', script, *args], capture_output=True, text=True, timeout=60)
@@ -75,7 +80,7 @@ def main():
               'total_tests': sum(r['tests'] for r in results)}
     output = json.dumps(report, indent=2) + '\n'
     assert len(output.encode()) < 100000
-    Path('gathering/checks-24.json').write_text(output)
+    Path('gathering/checks-25.json').write_text(output)
     assert before == after, 'line files changed'
     assert all(r['exit'] == 0 and r['tests'] > 0 for r in results)
     assert all(r['exit'] == r['expected_exit'] for r in trials)

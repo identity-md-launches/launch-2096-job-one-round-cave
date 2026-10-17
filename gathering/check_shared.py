@@ -22,6 +22,19 @@ def main():
     for item in provenance:
         assert hashlib.sha256(Path(item['source']).read_bytes()).hexdigest() == item['sha256']
         assert hashlib.sha256((root / item['copy']).read_bytes()).hexdigest() == item['sha256']
+    adapted = json.loads(Path('shared/merge-dependencies/SECOND-CHECK-PROVENANCE.json').read_text())
+    for key, hash_key in [('source', 'source_sha256'), ('copy', 'copy_sha256')]:
+        assert hashlib.sha256(Path(adapted[key]).read_bytes()).hexdigest() == adapted[hash_key]
+    source = Path(adapted['source']).read_text().replace(
+        "ENGINE = Path(__file__).resolve().parent.parent / 'offline-resolver' / 'resolve.py'",
+        "ENGINE = Path(__file__).resolve().parent / 'resolve.py'")
+    assert source[:source.index('\ndef main(argv=None):')] + '\n' == Path(adapted['copy']).read_text()
+    second_command = [sys.executable, '-B', 'shared/merge-dependencies/second_check.py', 'demo']
+    second = subprocess.run(second_command, capture_output=True, text=True, timeout=60)
+    assert second.returncode == 0, second.stderr
+    second_result = json.loads(second.stdout)
+    assert second_result['status'] == 'unsatisfiable'
+    assert second_result['enumeration']['checked_assignments'] == second_result['enumeration']['candidate_assignments']
     command = [sys.executable, '-B', str(root / 'handoff.py'), 'check',
                str(root / 'tools/proof-set/examples/zto-and-pool.json'),
                '--block-hash', '0x38dc4deb12174972d332cc1f95008b25ea87434f420ce0a51938e1b28755e9dc',
@@ -32,9 +45,11 @@ def main():
     assert proc.returncode == 0, proc.stderr
     report = {'suites': results, 'total_tests': sum(r['tests'] for r in results),
               'copied_files_match_sources': len(provenance),
+              'adapted_exhaustive_source_verified': True,
+              'second_check_demo': {'command': second_command, 'exit': second.returncode, 'result': second_result},
               'example': {'command': command, 'exit': proc.returncode,
                           'result': json.loads(proc.stdout)}}
-    Path('gathering/shared-checks-24.json').write_text(json.dumps(report, indent=2)+'\n')
+    Path('gathering/shared-checks-25.json').write_text(json.dumps(report, indent=2)+'\n')
     assert all(r['exit'] == 0 and r['tests'] > 0 for r in results)
     assert report['example']['result']['verified'] is True
 

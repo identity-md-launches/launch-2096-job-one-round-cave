@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "remoteImagesBlockedToExerciseLocalFallback": true,
+  "results": [
+    {
+      "title": "Crystal — Pepeolithic",
+      "scroll": 320,
+      "width": 320,
+      "sections": 5,
+      "cards": 123,
+      "visibleCards": 23,
+      "firstGathering": "25 · Where checks meet",
+      "pendingVisible": 100,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "title": "Crystal — Pepeolithic",
+      "scroll": 390,
+      "width": 390,
+      "sections": 5,
+      "cards": 123,
+      "visibleCards": 23,
+      "firstGathering": "25 · Where checks meet",
+      "pendingVisible": 100,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "title": "Crystal — Pepeolithic",
+      "scroll": 1440,
+      "width": 1440,
+      "sections": 5,
+      "cards": 123,
+      "visibleCards": 23,
+      "firstGathering": "25 · Where checks meet",
+      "pendingVisible": 100,
+      "errors": [],
+      "passed": true
+    }
+  ]
+}

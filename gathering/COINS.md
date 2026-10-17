@@ -1,8 +1,8 @@
 none
 
-The four lines and Proof Handoff operate offline with standard-library Python.
-No token, fee, hook, payment or deployment enables a missing part of merging,
-proof verification, cited search or finite dependency resolution. ZTO and IMD
-already provide the real Ethereum token/pool context used in the evidence.
-A new coin would add an unnecessary requirement. No launch/deployment order or
-request-check POST is justified. Nothing was signed, sent, paid or deployed.
+Merging edits, verifying Ethereum commitments, finding cited evidence and checking
+finite dependency catalogs already work without a new coin. The new second-check
+integration is read-only standard-library Python. ZTO and IMD already provide the
+real Ethereum token/pool context; another token or hook would enable no missing
+capability. No launch/deployment order or request-check POST is justified.
+Nothing was signed, sent, paid or deployed.

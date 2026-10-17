@@ -1,0 +1,28 @@
+{
+  "ancestor_sha256": "920904b57be66d41927d0fb9d365d714a42801cbc04ac7cfbab7ddf24d1873e8",
+  "wall_sha256": "0a5424637b85bf59606fc052f93816210e82772c7e316cb618bfb05bf271cef9",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "mode": "RGB",
+  "new_mark_rectangle": [
+    550,
+    210,
+    155,
+    95
+  ],
+  "changed_pixels": 4441,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Image tool edit; only ochre, charcoal and chalk pigment composited on unused rock. All other pixels copied from ancestor.",
+  "preview": {
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 93436
+  },
+  "unmet_visual_requirements": []
+}

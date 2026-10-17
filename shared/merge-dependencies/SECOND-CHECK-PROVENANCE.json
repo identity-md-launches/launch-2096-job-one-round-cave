@@ -1,0 +1,11 @@
+{
+  "source": "line-4/tools/exhaustive-audit/audit.py",
+  "source_sha256": "315d4bd407d6247e56ab707db390578772acc1ce7d50940ccb92915c57a2b624",
+  "copy": "shared/merge-dependencies/exhaustive.py",
+  "copy_sha256": "18ecc69fd994c9945adab126ae6a0fe6c69165bdc47f0dec4defcab4bdc684fb",
+  "adaptations": [
+    "ENGINE now points to adjacent resolve.py",
+    "Removed original main/CLI; second_check.py supplies the integrated CLI"
+  ],
+  "license_note": "Same inherited project source; no third-party package added."
+}

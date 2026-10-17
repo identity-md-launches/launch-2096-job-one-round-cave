@@ -1,20 +1,17 @@
-# Gathering 24: Carry the checked bundle
+# Gathering 25 — where checks meet
 
-This round rechecks the four lines and adds [Proof Handoff](../shared/proof-handoff/README.md),
-which joins multi-account Ethereum proofs with a portable, reproduced search bundle.
+This round checks every line and adds a second dependency compatibility check to
+[Merge Dependencies](../shared/merge-dependencies/README.md). It connects line 4's
+exhaustive enumeration to line 1's text merge review. It catches a clean real
+Requests catalog merge that becomes incompatible, without applying changes.
 
 ```sh
-python3 -B shared/proof-handoff/handoff.py demo
+python3 -B shared/merge-dependencies/second_check.py demo
 ```
 
-The real historical ZTO account/code and ZTO/IMD pool prove against one execution
-header. Searchable documents must match those reverified results exactly; the
-saved query then reproduces on temporarily restored sources. The tool works
-without line folders and needs no network or installed dependency.
-
-REPORT.md covers all four goals, commands, results and limits. All 220 line tests,
-22 expected demo/status trials and 35 shared tests passed. COINS.md says none.
-No line file or line record changed. Reproduce with:
+REPORT.md covers all four goals and the limitations. All 258 line tests, 27
+expected demo statuses and 46 shared tests passed locally. No line files changed.
+COINS.md says none. Reproduce checks with:
 
 ```sh
 python3 -B gathering/check_tools.py
@@ -22,21 +19,21 @@ python3 -B gathering/check_shared.py
 python3 -B gathering/check_deliverable.py
 ```
 
-The required `artifacts/gathering/wall-v4.png` is a 1254 × 1254 RGB PNG. The
-installed image tool generated an ochre hide/reed bundle with charcoal ties;
-only its pigment was blended on unused ancestor rock. Exactly 4,234 pixels
-changed in one 190 × 85 patch; zero outside it. Pepe and all inherited marks
-remain. No hands/stencils or text added. Charcoal ties are faint at preview size;
-no unmet visual requirement was identified in local inspection of both images.
+`artifacts/gathering/wall-v5.png` is a 1254 × 1254 RGB PNG. Two worn pigment
+loops meet above the inherited Pepe. The installed image tool supplied the mark;
+only its pigment was composited onto unused rock. Exactly 4,441 pixels changed
+within one 155 × 95 patch; zero elsewhere. No ancestor mark was removed. No hands,
+handprints or text were added. The charcoal loop is faint at thumbnail size.
+Both full wall and preview were inspected; no unmet visual requirement identified.
 
-`dist/gathering/24.jpg` is a 512 × 512 JPEG. Record 24 hashes the finished PNG.
-The export stays untracked for the uploader; `wall.png` is a relative continuation
-symlink, so a source-only archive needs the uploaded PNG restored beside it.
-The image prompt is in IMAGE_PROMPT-24.md. finish_wall24.py documents a one-time
-production step requiring the transient generated draft; do not rerun it on the
-finished wall. It is not a runtime dependency. PNG encoding used the existing
-standard-library helper; ffmpeg produced the JPEG (scale=512:512, quality 5).
+`dist/gathering/25.jpg` is a 512 × 512 JPEG below 100 KB; record 25 hashes the PNG.
+The PNG stays untracked for the uploader. `artifacts/gathering/wall.png` is a
+continuation symlink; a source-only archive needs the uploaded PNG restored.
+`finish_wall25.mjs` documents the one-time compositing and thumbnail step: it
+requires the transient image-tool draft at the output path and must not be rerun
+on the finished wall. It uses Node built-ins plus the already vendored jpeg-js
+encoder in line 3 solely for image production, not for any worker tool.
 
-`python3 -B gathering/build_gallery.py` rebuilds the self-contained gallery and
-goal feed. It retains every record and all 100 inherited placeholders. No external
-scripts, fonts, wallet controls or styles are needed.
+`python3 -B gathering/build_gallery.py` rebuilds the single-file gallery and goals
+from the records. It retains all 100 inherited placeholders and every painted
+record. No external scripts, fonts, styles, wallet controls or runtime installs.
